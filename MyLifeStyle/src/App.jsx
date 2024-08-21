@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import MyClass from '../components/MyClass'  
 import './App.css'
 
 const App = () => {
@@ -109,30 +110,8 @@ const App = () => {
         <div className="background"> 
           <nav className="md-hide" id="nav">
             <a className="nav-item" href="./index.html" title="Home">
-              <svg className="nav-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 800" style={{enableBackground: 'new 0 0 800 800'}} xmlSpace="preserve">
-                <g>
-                  <ellipse className="nav-st0" cx="400.08" cy="200.97" rx="197.24" ry="197.36" />
-                  <ellipse className="nav-st1" cx="400.08" cy="299.66" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st1" cx="400.08" cy="102.29" rx="98.62" ry="98.68" />                        
-                  <ellipse className="nav-st1" cx="498.7" cy="200.97" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st1" cx="301.45" cy="200.97" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st0" cx="400.08" cy="595.7" rx="197.24" ry="197.36" />
-                  <ellipse className="nav-st1" cx="400.08" cy="694.39" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st1" cx="400.08" cy="497.02" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st1" cx="498.7" cy="595.7" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st1" cx="301.45" cy="595.7" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st0" cx="202.83" cy="398.34" rx="197.24" ry="197.36" />
-                  <ellipse className="nav-st1" cx="301.45" cy="398.34" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st1" cx="104.21" cy="398.34" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st1" cx="202.83" cy="299.66" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st1" cx="202.83" cy="497.02" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st0" cx="597.32" cy="398.34" rx="197.24" ry="197.36" />
-                  <ellipse className="nav-st1" cx="695.94" cy="398.34" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st1" cx="498.7" cy="398.34" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st1" cx="597.32" cy="299.66" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st1" cx="597.32" cy="497.02" rx="98.62" ry="98.68" />
-                  <ellipse className="nav-st2" cx="400.08" cy="398.34" rx="394.97" ry="395.22" />
-                </g>
+              <svg className="nav-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" style={{enableBackground: 'new 0 0 400 400'}} xmlSpace="preserve">
+               <MyClass/>
               </svg>
             </a>
             <div className="main-menu">
@@ -143,37 +122,13 @@ const App = () => {
             </div>
             <div className="details">
               <a className="nav-item nav-contact" href title="Email"><i className="far fa-envelope" /> Email Enquiry</a>
-              <a className="nav-item nav-contact" href="tel:0123491623" title="Phone"><i className="fas fa-phone" /> 01654 787 654</a>
+              <a className="nav-item nav-contact" href="tel:0123491623" title="Phone"><i className="fas fa-phone" /> +1 (561) 851-0409</a>
             </div>
             <button onclick="window.location.href='./contact.html'" className="nav-booking-btn">Make a Booking</button>
           </nav>
           <div className="header">
             {/* logo svg */}
-            <svg className="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 800" style={{enableBackground: 'new 0 0 800 800'}} xmlSpace="preserve">
-              <g>
-                <ellipse className="st0" cx="400.08" cy="200.97" rx="197.24" ry="197.36" />
-                <ellipse className="st1" cx="400.08" cy="299.66" rx="98.62" ry="98.68" />
-                <ellipse className="st1" cx="400.08" cy="102.29" rx="98.62" ry="98.68" />
-                <ellipse className="st1" cx="498.7" cy="200.97" rx="98.62" ry="98.68" />
-                <ellipse className="st1" cx="301.45" cy="200.97" rx="98.62" ry="98.68" />
-                <ellipse className="st0" cx="400.08" cy="595.7" rx="197.24" ry="197.36" />
-                <ellipse className="st1" cx="400.08" cy="694.39" rx="98.62" ry="98.68" />
-                <ellipse className="st1" cx="400.08" cy="497.02" rx="98.62" ry="98.68" />
-                <ellipse className="st1" cx="498.7" cy="595.7" rx="98.62" ry="98.68" />
-                <ellipse className="st1" cx="301.45" cy="595.7" rx="98.62" ry="98.68" />
-                <ellipse className="st0" cx="202.83" cy="398.34" rx="197.24" ry="197.36" />
-                <ellipse className="st1" cx="301.45" cy="398.34" rx="98.62" ry="98.68" />
-                <ellipse className="st1" cx="104.21" cy="398.34" rx="98.62" ry="98.68" />
-                <ellipse className="st1" cx="202.83" cy="299.66" rx="98.62" ry="98.68" />
-                <ellipse className="st1" cx="202.83" cy="497.02" rx="98.62" ry="98.68" />
-                <ellipse className="st0" cx="597.32" cy="398.34" rx="197.24" ry="197.36" />
-                <ellipse className="st1" cx="695.94" cy="398.34" rx="98.62" ry="98.68" />
-                <ellipse className="st1" cx="498.7" cy="398.34" rx="98.62" ry="98.68" />
-                <ellipse className="st1" cx="597.32" cy="299.66" rx="98.62" ry="98.68" />
-                <ellipse className="st1" cx="597.32" cy="497.02" rx="98.62" ry="98.68" />
-                <ellipse className="st2" cx="400.08" cy="398.34" rx="394.97" ry="395.22" />
-              </g>
-            </svg>
+            <MyClass/>
             <h1 className="title main">My Life Style</h1>
             <h2 className="title white-text quote">Real beauty</h2>
           </div>
